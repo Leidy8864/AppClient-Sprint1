@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".interfaces.BuscarPersona">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Buscar por:"/>
+
+    <Spinner
+        android:id="@+id/spinnerPersonParametros"
+        android:layout_width="263dp"
+        android:layout_height="29dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:entries="@array/atributos_persona" />
+
+    <EditText
+        android:id="@+id/editTextDato"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerPersonParametros"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="139dp"
+        android:text="Buscar" />
+
+
+    <ListView
+        android:id="@+id/listViewPersonas"
+        android:layout_width="260dp"
+        android:layout_height="261dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/editTextDato"
+        android:layout_marginBottom="51dp" />
+</RelativeLayout>
